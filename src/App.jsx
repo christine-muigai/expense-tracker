@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import styles from './App.module.css';
 
 function App() {
   const [expenses, setExpenses] = useState([
@@ -82,7 +82,7 @@ function App() {
   const totalAmount = sortedExpenses.reduce((sum, expense) => sum + expense.amount, 0)
 
   return (
-    <div className="expense-tracker">
+    <div className={styles.expenseTracker}>
       <h1>Expense Tracker</h1>
       
       <div className="search-container">
