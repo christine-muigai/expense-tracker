@@ -5,8 +5,9 @@
 
 h1 {
   text-align: center;
-  color: #646cff;
+  color: #ff6f61;
   margin-bottom: 30px;
+  text-shadow: 2px 2px #ff9a8b;
 }
 
 .search-container {
@@ -16,19 +17,22 @@ h1 {
 .search-container input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 2px solid #ff9a8b;
+  border-radius: 8px;
   font-size: 16px;
+  background-color: #fff5f5;
+  color: #ff6f61;
 }
 
 .expense-form {
-  background-color: #f5f5f5;
+  background-color: #ff9a8b;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
@@ -39,30 +43,35 @@ h1 {
 .form-group label {
   margin-bottom: 5px;
   font-weight: bold;
+  color: #ff6f61;
 }
 
 .form-group input,
 .form-group select {
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 10px;
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
+  background-color: #fff5f5;
+  color: #ff6f61;
 }
 
 .expense-form button {
-  background-color: #646cff;
-  color: white;
+  background-color: #ff6f61;
+  color: #fff;
   border: none;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 12px;
+  border-radius: 8px;
   cursor: pointer;
   align-self: flex-end;
   grid-column: 1 / -1;
   max-width: 200px;
   margin: 0 auto;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .expense-form button:hover {
-  background-color: #535bf2;
+  background-color: #ff3b3b;
 }
 
 .expenses-table {
@@ -73,36 +82,43 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  background-color: #fff5f5;
+  border: 2px solid #ff6f61;
 }
 
 th, td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ff9a8b;
 }
 
 th {
-  background-color: #f5f5f5;
+  background-color: #ff6f61;
+  color: #fff;
   cursor: pointer;
   user-select: none;
+  text-shadow: 1px 1px #ff3b3b;
 }
 
 th:hover {
-  background-color: #e9e9e9;
+  background-color: #ff3b3b;
 }
 
 tfoot td {
   font-weight: bold;
-  background-color: #f5f5f5;
+  background-color: #ff9a8b;
+  color: #fff;
 }
 
 .delete-btn {
   background-color: #ff4444;
-  color: white;
+  color: #fff;
   border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 8px 16px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .delete-btn:hover {
@@ -111,31 +127,31 @@ tfoot td {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: #ff9a8b;
+    background-color: #1a1a1a;
   }
 
   .expense-form {
-    background-color: #1a1a1a;
+    background-color: #2a2a2a;
   }
   
   th, tfoot td {
-    background-color: #1a1a1a;
+    background-color: #2a2a2a;
   }
   
   .search-container input,
   .form-group input,
   .form-group select {
-    background-color: #242424;
-    color: white;
+    background-color: #2a2a2a;
+    color: #ff9a8b;
     border-color: #444;
   }
   
   table {
-    color: rgba(255, 255, 255, 0.87);
+    color: #ff9a8b;
   }
   
   th:hover {
-    background-color: #2a2a2a;
+    background-color: #3a3a3a;
   }
 }
