@@ -1,7 +1,5 @@
 .expense-tracker {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
   font-family: Arial, sans-serif;
 }
 
@@ -86,6 +84,7 @@ th, td {
 th {
   background-color: #f5f5f5;
   cursor: pointer;
+  user-select: none;
 }
 
 th:hover {
@@ -111,6 +110,11 @@ tfoot td {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+
   .expense-form {
     background-color: #1a1a1a;
   }

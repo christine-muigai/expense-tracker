@@ -1,8 +1,13 @@
 body {
-    margin: 0;
-    display: flex;
-    place-items: flex-start; 
-    min-width: 320px;
-    min-height: 100vh;
-    padding: 20px; 
-  }
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+#root {
+  width: 100%;
+  max-width: 1000px;
+}
